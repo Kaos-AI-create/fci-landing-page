@@ -1,272 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="San Antonio's trusted insurance partner for SR-22, Auto, Home, and Commercial insurance. Instant SR-22 filing with Texas DPS.">
-    <meta name="keywords"
-        content="San Antonio Insurance, SR-22 Texas, Auto Insurance San Antonio, Commercial Insurance, General Liability">
     <title>First Choice Insurance Services - San Antonio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-        }
-
-        .sr22-badge {
-            box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.7);
-            animation: pulse-gold 2s infinite;
-        }
-
-        @keyframes pulse-gold {
-            0% {
-                transform: scale(0.95);
-                box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.7);
-            }
-
-            70% {
-                transform: scale(1);
-                box-shadow: 0 0 0 10px rgba(234, 179, 8, 0);
-            }
-
-            100% {
-                transform: scale(0.95);
-                box-shadow: 0 0 0 0 rgba(234, 179, 8, 0);
-            }
+        .glass-panel { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .hero-bg {
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)), 
+            url('https://images.unsplash.com/photo-1531218150427-d74b53a142b5?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
-
-<body class="bg-white font-sans antialiased">
-
-    <nav class="bg-blue-900 text-white p-4 shadow-md sticky top-0 z-50">
+<body class="bg-white font-sans">
+    <nav class="bg-blue-900 text-white p-4 sticky top-0 z-50 shadow-lg">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <span class="font-bold text-xl">First Choice Insurance Services</span>
-            <div class="flex items-center gap-4">
-                <a href="tel:2105909955" class="hidden md:inline-block hover:text-blue-200 transition-colors">
-                    (210) 590-9955
-                </a>
-                <a href="#quote"
-                    class="bg-white text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-blue-50 transition-colors shadow-lg">
-                    Get a Quote
-                </a>
-            </div>
+            <span class="font-bold text-xl uppercase">First Choice Insurance</span>
+            <a href="tel:2105909955" class="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold">(210) 590-9955</a>
         </div>
     </nav>
 
-    <!-- Hero Section with San Antonio Skyline and Dark Overlay -->
-    <div class="relative pt-20 pb-32 overflow-hidden bg-cover bg-center"
-        style="background-image: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.85)), url('https://images.unsplash.com/photo-1531218150427-d74b53a142b5');">
-
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center relative z-10">
-            <div class="relative z-10 md:w-1/3 mb-10 md:mb-0">
-                <!-- SR-22 Badge -->
-                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20 whitespace-nowrap">
-                    <span
-                        class="sr22-badge bg-yellow-400 text-blue-900 font-bold px-6 py-2 rounded-full shadow-lg text-sm uppercase tracking-wider">
-                        ★ Instant SR-22 Filing
-                    </span>
-                </div>
-
-                <img src="images/agent.png" alt="Insurance Professional"
-                    class="rounded-lg shadow-2xl border-4 border-white transform translate-y-12 md:translate-y-24 scale-110 object-cover">
+    <div class="hero-bg relative pt-20 pb-32 text-white">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/3 mb-10 md:mb-0">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" 
+                     class="rounded-lg border-4 border-white shadow-2xl mx-auto">
             </div>
-
-            <div class="md:w-2/3 text-white md:pl-12">
-                <h1 class="text-4xl md:text-6xl font-black mb-2 leading-tight">San Antonio’s Trusted Insurance Partner
-                </h1>
-                <p class="text-xl md:text-2xl font-light mb-8 text-blue-100">Local Expertise | Personalized Service</p>
-
-                <div class="glass-panel p-8 rounded-xl text-blue-900">
-                    <h3 class="text-2xl font-bold mb-4 border-b border-blue-900/20 pb-2">A Legacy of Service</h3>
-                    <p class="text-lg leading-relaxed font-medium">
-                        For over a decade, <strong>First Choice Insurance Services</strong> has been a cornerstone of
-                        the San Antonio community, providing reliable protection for what matters most. With deep roots
-                        in South Texas, we understand the unique challenges our neighbors face—from SR-22 requirements
-                        to commercial liability. We pride ourselves on <strong>professional, one-on-one
-                            advocacy</strong>, ensuring you never face a claim alone. As your local independent agent,
-                        we work for <em>you</em>, not the big insurance carriers.
-                    </p>
+            <div class="md:w-2/3 md:pl-12">
+                <h1 class="text-5xl font-black mb-4">SAN ANTONIO'S TRUSTED PARTNER</h1>
+                <div class="glass-panel p-6 rounded-xl text-blue-900">
+                    <p class="text-lg font-medium">Over a decade of local expertise. We handle SR-22, Auto, and Commercial insurance with one-on-one advocacy.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 py-24">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Personal Insurance Column -->
-            <div>
-                <h2 class="text-3xl font-bold text-blue-900 mb-8 border-l-8 border-yellow-400 pl-4">Personal Insurance
-                </h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <a href="#quote"
-                        class="p-6 border-2 border-blue-900 text-blue-900 font-bold text-center rounded hover:bg-blue-900 hover:text-white transition-all shadow-sm hover:shadow-md">Auto</a>
-                    <a href="#quote"
-                        class="p-6 border-2 border-blue-900 text-blue-900 font-bold text-center rounded hover:bg-blue-900 hover:text-white transition-all shadow-sm hover:shadow-md">Home</a>
-                    <a href="#quote"
-                        class="p-6 border-2 border-blue-900 text-blue-900 font-bold text-center rounded hover:bg-blue-900 hover:text-white transition-all shadow-sm hover:shadow-md">Renters</a>
-                    <a href="#quote"
-                        class="p-6 border-2 border-blue-900 text-blue-900 font-bold text-center rounded hover:bg-blue-900 hover:text-white transition-all shadow-sm hover:shadow-md">SR-22</a>
-                </div>
-            </div>
-
-            <!-- Business Insurance Column -->
-            <div>
-                <h2 class="text-3xl font-bold text-blue-900 mb-8 border-l-8 border-blue-900 pl-4">Business Insurance
-                </h2>
-                <div class="grid grid-cols-2 gap-4">
-                    <a href="#quote"
-                        class="p-6 border-2 border-blue-900 text-blue-900 font-bold text-center rounded hover:bg-blue-900 hover:text-white transition-all shadow-sm hover:shadow-md">Commercial</a>
-                    <a href="#quote"
-                        class="p-6 border-2 border-blue-900 text-blue-900 font-bold text-center rounded hover:bg-blue-900 hover:text-white transition-all shadow-sm hover:shadow-md">General
-                        Liability</a>
-                    <a href="#quote"
-                        class="p-6 border-2 border-blue-900 text-blue-900 font-bold text-center rounded hover:bg-blue-900 hover:text-white transition-all shadow-sm hover:shadow-md">Workers
-                        Comp</a>
-                    <a href="#quote"
-                        class="p-6 border-2 border-blue-900 text-blue-900 font-bold text-center rounded hover:bg-blue-900 hover:text-white transition-all shadow-sm hover:shadow-md">Fleet</a>
-                </div>
-            </div>
-        </div>
+    <div class="max-w-7xl mx-auto px-4 py-16 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-8 border-2 border-blue-900 rounded-xl text-center font-bold text-blue-900">AUTO</div>
+        <div class="p-8 border-2 border-blue-900 rounded-xl text-center font-bold text-blue-900">SR-22</div>
+        <div class="p-8 border-2 border-blue-900 rounded-xl text-center font-bold text-blue-900">HOME</div>
+        <div class="p-8 border-2 border-blue-900 rounded-xl text-center font-bold text-blue-900">COMMERCIAL</div>
     </div>
 
-    <!-- SR-22 FAQ Section -->
-    <section class="bg-blue-50 py-16">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-blue-900 mb-10 text-center">SR-22 Insurance Experts - FAQ</h2>
-            <div class="space-y-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">How fast can you file my SR-22?</h3>
-                    <p class="text-[#374151] text-lg font-medium">Instantly. We have a direct digital connection with
-                        the Texas Department of
-                        Public Safety. Once your policy is active, we file your certificate immediately so you can get
-                        back on the road.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold text-blue-900 mb-2">Do you offer Non-Owner SR-22 policies?</h3>
-                    <p class="text-[#374151] text-lg font-medium">Yes! If you don't own a vehicle but need an SR-22 to
-                        keep your license
-                        valid, a Non-Owner policy is the most affordable solution. We specialize in these policies.</p>
-                </div>
+    <section class="bg-blue-50 py-16 px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">FAQ</h2>
+            <div class="bg-white p-6 rounded-lg shadow mb-4">
+                <p class="font-bold">How fast is SR-22 filing?</p>
+                <p>We file instantly with the Texas DPS digitally.</p>
             </div>
         </div>
     </section>
 
-    <section id="quote" class="bg-gray-50 py-20 px-4">
-        <div class="max-w-4xl mx-auto bg-white p-10 rounded-2xl shadow-xl border-t-8 border-blue-900">
-            <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">Get Your Free Quote</h3>
-            <form data-netlify="true" name="contact" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input type="hidden" name="form-name" value="contact">
-                <input type="text" name="name" placeholder="Full Name"
-                    class="p-4 bg-gray-100 rounded border-none focus:ring-2 focus:ring-blue-900 placeholder-gray-600"
-                    required>
-                <input type="tel" name="phone" placeholder="Phone Number"
-                    class="p-4 bg-gray-100 rounded border-none focus:ring-2 focus:ring-blue-900 placeholder-gray-600"
-                    required>
-                <input type="email" name="email" placeholder="Email Address"
-                    class="p-4 bg-gray-100 rounded border-none focus:ring-2 focus:ring-blue-900 md:col-span-2 placeholder-gray-600">
-                <button type="submit"
-                    class="md:col-span-2 bg-blue-900 text-white font-bold py-4 rounded-xl text-xl hover:shadow-lg transition-shadow">
-                    Submit Request
-                </button>
-            </form>
+    <section id="quote" class="py-16 px-4">
+        <div class="max-w-lg mx-auto bg-white p-8 rounded-2xl shadow-2xl border-t-8 border-blue-900">
+            <h3 class="text-2xl font-bold text-center mb-6">Free Quote</h3>
+            <div class="space-y-4">
+                <input type="text" placeholder="Name" class="w-full p-4 bg-gray-100 rounded">
+                <input type="tel" placeholder="Phone" class="w-full p-4 bg-gray-100 rounded">
+                <button class="w-full bg-blue-900 text-white font-bold py-4 rounded-lg">GET STARTED</button>
+            </div>
         </div>
     </section>
 
-    <!-- Testimonial Carousel -->
-    <section class="bg-blue-900 py-16 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 mb-8 text-center">
-            <h2 class="text-3xl font-bold text-white">What Our Clients Say</h2>
-        </div>
-
-        <div class="testimonial-container relative w-full overflow-hidden">
-            <div class="testimonial-track flex gap-6 px-4">
-                <!-- Card 1 -->
-                <div class="testimonial-card min-w-[300px] md:min-w-[400px] bg-white p-8 rounded-xl shadow-lg">
-                    <div class="flex text-yellow-500 mb-4">★★★★★</div>
-                    <p class="text-gray-700 mb-4 italic">"First Choice Insurance saved me when I needed an SR-22 fast.
-                        The process was digital, quick, and they explained everything clearly."</p>
-                    <p class="font-bold text-blue-900">- Queen F.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="testimonial-card min-w-[300px] md:min-w-[400px] bg-white p-8 rounded-xl shadow-lg">
-                    <div class="flex text-yellow-500 mb-4">★★★★★</div>
-                    <p class="text-gray-700 mb-4 italic">"I've been with them for 5 years. Best rates in San Antonio
-                        for my commercial fleet. Highly recommend!"</p>
-                    <p class="font-bold text-blue-900">- Michael R.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="testimonial-card min-w-[300px] md:min-w-[400px] bg-white p-8 rounded-xl shadow-lg">
-                    <div class="flex text-yellow-500 mb-4">★★★★★</div>
-                    <p class="text-gray-700 mb-4 italic">"Professional, kind, and local. It feels good to talk to a
-                        real person who knows the area, not a call center."</p>
-                    <p class="font-bold text-blue-900">- Sarah T.</p>
-                </div>
-                <!-- Duplicates for Loop -->
-                <div class="testimonial-card min-w-[300px] md:min-w-[400px] bg-white p-8 rounded-xl shadow-lg">
-                    <div class="flex text-yellow-500 mb-4">★★★★★</div>
-                    <p class="text-gray-700 mb-4 italic">"First Choice Insurance saved me when I needed an SR-22 fast.
-                        The process was digital, quick, and they explained everything clearly."</p>
-                    <p class="font-bold text-blue-900">- Queen F.</p>
-                </div>
-                <div class="testimonial-card min-w-[300px] md:min-w-[400px] bg-white p-8 rounded-xl shadow-lg">
-                    <div class="flex text-yellow-500 mb-4">★★★★★</div>
-                    <p class="text-gray-700 mb-4 italic">"I've been with them for 5 years. Best rates in San Antonio
-                        for my commercial fleet. Highly recommend!"</p>
-                    <p class="font-bold text-blue-900">- Michael R.</p>
-                </div>
-                <div class="testimonial-card min-w-[300px] md:min-w-[400px] bg-white p-8 rounded-xl shadow-lg">
-                    <div class="flex text-yellow-500 mb-4">★★★★★</div>
-                    <p class="text-gray-700 mb-4 italic">"Professional, kind, and local. It feels good to talk to a
-                        real person who knows the area, not a call center."</p>
-                    <p class="font-bold text-blue-900">- Sarah T.</p>
-                </div>
-            </div>
-        </div>
-
-        <script>
-            // Simple GSAP Auto-Scroll
-            gsap.to(".testimonial-track", {
-                xPercent: -50,
-                ease: "none",
-                duration: 20,
-                repeat: -1
-            });
-        </script>
-    </section>
-
-    <footer class="bg-blue-950 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-                <h4 class="text-xl font-bold mb-4">Contact Us</h4>
-                <p class="mb-2"><strong>Phone:</strong> (210) 590-9955</p>
-                <p class="mb-2"><strong>Address:</strong><br>8526 Tuxford<br>San Antonio, TX 78239</p>
-            </div>
-            <div>
-                <h4 class="text-xl font-bold mb-4">Office Hours</h4>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 10:00 AM - 2:00 PM</p>
-                <p>Sunday: Closed</p>
-            </div>
-            <div class="h-48 rounded-lg overflow-hidden bg-gray-200">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.6080344406604!2d-98.37684062438848!3d29.527845375185933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c8b749808d4b3%3A0x644675204689255!2s8526%20Tuxford%2C%20San%20Antonio%2C%20TX%2078239!5e0!3m2!1sen!2sus!4v1707960000000!5m2!1sen!2sus"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        <div class="text-center border-t border-blue-900/50 pt-8 opacity-60 text-sm">
-            <p>© 2026 First Choice Insurance Services - San Antonio, TX</p>
-        </div>
+    <footer class="bg-blue-900 text-white py-8 text-center">
+        <p>© 2026 First Choice Insurance Services | San Antonio, TX</p>
     </footer>
-
 </body>
-
 </html>
